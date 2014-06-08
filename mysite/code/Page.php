@@ -2,13 +2,11 @@
 class Page extends SiteTree {
 
 	public function Title() {
-		return "Version 4";
+		return "Version 5";
 	}
 
 }
 class Page_Controller extends ContentController {
-
-	private static $allowed_actions = array ();
 
 	public function init() {
 		parent::init();
