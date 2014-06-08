@@ -1,0 +1,10 @@
+{
+    "name": "nguyer/silverstripe-pure",
+    "description": "A Pure theme for silverstripe",
+    "type": "silverstripe-theme",
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/cms": ">=3.1",
+        "silverstripe/framework": ">=3.1"
+    }
+}
