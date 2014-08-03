@@ -30,11 +30,7 @@ jQuery(window).on('load resize orientationchange', function() {
 
 	if (width >= desktopwidth) {
 		$('#navbar').addClass('pure-menu-open');
-		console.log('true');
 	} else {
-
-		
-
 		$('.menu-trigger').on('click', function() {
 			if($('#navbar').hasClass('pure-menu-open')){
 				$('#navbar').removeClass('pure-menu-open');
