@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "18acb14ecfa5c509d88c8c963c3c7080",
+    "hash": "495d0f0b9a0d9410d6ff6f537764c267",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -474,16 +474,16 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.1.10",
+            "version": "dev-speed-up-dev-build",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "c302edc4e72dd93ac2c7d9bbf0ee42d2d74cd48b"
+                "url": "https://github.com/stojg/sapphire.git",
+                "reference": "9aad0a08161b9f2c1829cdfc065c2feeaca0fa50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/c302edc4e72dd93ac2c7d9bbf0ee42d2d74cd48b",
-                "reference": "c302edc4e72dd93ac2c7d9bbf0ee42d2d74cd48b",
+                "url": "https://api.github.com/repos/stojg/sapphire/zipball/9aad0a08161b9f2c1829cdfc065c2feeaca0fa50",
+                "reference": "9aad0a08161b9f2c1829cdfc065c2feeaca0fa50",
                 "shasum": ""
             },
             "require": {
@@ -499,7 +499,6 @@
                     "tests/behat/features/bootstrap"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -519,7 +518,10 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2015-02-18 23:37:16"
+            "support": {
+                "source": "https://github.com/stojg/sapphire/tree/speed-up-dev-build"
+            },
+            "time": "2015-02-19 23:20:43"
         },
         {
             "name": "silverstripe/silverstripe-aws",
@@ -622,9 +624,18 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "3.1.10",
+            "alias_normalized": "3.1.10.0",
+            "version": "dev-speed-up-dev-build",
+            "package": "silverstripe/framework"
+        }
+    ],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "silverstripe/framework": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
