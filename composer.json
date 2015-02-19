@@ -1,13 +1,20 @@
 {
-	"name": "stojg/sandbox.dev",
-	"description": "This is stigs SilverStripe sandbox",
-	"require": {
-		"php": ">=5.3.2",
-		"silverstripe/cms": "3.1.5",
-		"silverstripe/framework": "3.1.5"
-	},
-	"config": {
-		"process-timeout": 600	
-	},
-	"minimum-stability": "dev"
+  "name": "stojg/sandbox.dev",
+  "description": "This is stigs SilverStripe sandbox",
+  "require": {
+    "php": ">=5.3.2",
+    "silverstripe/cms": "3.1.10",
+    "silverstripe/framework": "3.1.10",
+    "silverstripe/silverstripe-aws": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "ssh://git@gitlab.silverstripe.com:2222/aws/silverstripe-aws.git"
+    }
+  ],
+  "config": {
+    "process-timeout": 600
+  },
+  "minimum-stability": "dev"
 }
