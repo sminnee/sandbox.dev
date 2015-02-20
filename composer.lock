@@ -529,7 +529,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@gitlab.silverstripe.com:2222/aws/silverstripe-aws.git",
-                "reference": "f9c2372b1a3f19fe11dc46bc46c3483fad49bfb7"
+                "reference": "47d45d38b84b1fe583e58a265b1da1636afb242d"
             },
             "require": {
                 "aws/aws-sdk-php": "2.*",
@@ -562,7 +562,7 @@
             "support": {
                 "issues": "https://gitlab.silverstripe.com/aws/silverstripe-aws/issues"
             },
-            "time": "2014-11-20 01:43:15"
+            "time": "2015-02-20 00:10:13"
         },
         {
             "name": "symfony/event-dispatcher",
