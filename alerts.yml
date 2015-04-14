@@ -1,11 +1,7 @@
 alerts:
   dev-check:
-    envcheck-suite: "check"
-    environment: "oscar"
+    envcheck-suite: "pingdom"
+    environment: "live-oscar"
     contacts:
-      - "stig@stojg.net"
-  health-check:
-    envcheck-suite: "health"
-    environment: "oscar"
-    contacts:
-      - "stig@stojg.net"
+      - "stig@silverstripe.com"
+      - "sean@silverstripe.com"
