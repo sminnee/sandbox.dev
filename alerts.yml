@@ -5,3 +5,8 @@ alerts:
     contacts:
       - "stig@silverstripe.com"
       - "sean@silverstripe.com"
+  support:
+    envcheck-suite: "support"
+    environment: "live-oscar"
+    contacts:
+      - "ops"
