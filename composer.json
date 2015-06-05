@@ -10,7 +10,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "ssh://git@gitlab.silverstripe.com:2222/aws/silverstripe-aws.git"
+      "url": "https://gitlab.silverstripe.com/aws/silverstripe-aws.git"
     },
 	{
       "type": "vcs",
