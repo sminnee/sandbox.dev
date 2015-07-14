@@ -1,5 +1,10 @@
 <?php
 class Page extends SiteTree {
+
+    public function Title() {
+        return 'Version 2';
+    }
+
 }
 
 class Page_Controller extends ContentController {
