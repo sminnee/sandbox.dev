@@ -3,18 +3,14 @@
   "description": "This is stigs SilverStripe sandbox",
   "require": {
     "php": ">=5.3.2",
-    "silverstripe/cms": "3.1.10",
-    "silverstripe/framework": "dev-speed-up-dev-build as 3.1.10",
+    "silverstripe/cms": "3.1.13",
+    "silverstripe/framework": "3.1.13",
     "silverstripe/silverstripe-aws": "*"
   },
   "repositories": [
     {
       "type": "vcs",
       "url": "https://gitlab.silverstripe.com/aws/silverstripe-aws.git"
-    },
-	{
-      "type": "vcs",
-      "url": "https://github.com/stojg/sapphire.git"
     }
   ],
   "config": {
