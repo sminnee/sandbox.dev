@@ -30,7 +30,6 @@
 	</div>
 
 	<div class="layout container">
-		<p>Hello there!</p>
 		$Layout
 	</div>
 
