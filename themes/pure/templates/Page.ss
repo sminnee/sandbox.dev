@@ -30,7 +30,8 @@
 	</div>
 
 	<div class="layout container">
-			$Layout
+		<p>Hello there!</p>
+		$Layout
 	</div>
 
 	<% include Footer %>
