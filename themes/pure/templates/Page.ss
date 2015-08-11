@@ -30,6 +30,16 @@
 	</div>
 
 	<div class="layout container">
+		<% if $EnvDetails %>
+		<p>Details about environment:</p>
+
+		<ul>
+		<% loop $EnvDetails %>
+			<li>$Name: $Value</li>
+		<% end_loop %>
+		</ul>
+		<% end_if %>
+
 		$Layout
 	</div>
 
