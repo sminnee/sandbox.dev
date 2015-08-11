@@ -1,5 +1,21 @@
 <?php
 class Page extends SiteTree {
+
+	public function EnvDetails() {
+		$list = new ArrayList();
+		foreach(array(
+			'Hostname' => $_SERVER['HTTP_HOST'],
+			'PHP' => phpversion(),
+			'OS' => php_uname()
+		) as $k => $v) {
+			$list->push(new ArrayData(array(
+				'Name' => $k,
+				'Value' => $v
+			)));
+		}
+		return $list;
+	}
+
 }
 
 class Page_Controller extends ContentController {
