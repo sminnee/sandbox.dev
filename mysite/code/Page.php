@@ -6,6 +6,7 @@ class Page extends SiteTree {
 		foreach(array(
 			'Hostname' => $_SERVER['HTTP_HOST'],
 			'PHP' => phpversion(),
+			'PHP extensions' => implode(', ', get_loaded_extensions()),
 			'OS' => php_uname()
 		) as $k => $v) {
 			$list->push(new ArrayData(array(
