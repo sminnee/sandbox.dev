@@ -31,16 +31,39 @@
 
 	<div class="layout container">
 		<% if $EnvDetails %>
-		<p>Details about environment:</p>
-
-		<ul>
-		<% loop $EnvDetails %>
-			<li>$Name: $Value</li>
-		<% end_loop %>
-		</ul>
+        	<div class="pure-g">
+                <div class="pure-u-1-2">
+					$Layout
+				</div>
+                <div class="pure-u-1-2">
+				<h3>Environment details:</h3>
+				<table class="pure-table pure-table-bordered">
+                    <tbody>
+					<% loop $EnvDetails %>
+					<tr>
+						<td valign="top">$Name</td>
+						<td>
+						<% if $Value.Count %>
+							<ul>
+							<% loop $Value %>
+								<li>$Value</li>
+							<% end_loop %>
+                            </ul>
+						<% else %>
+							$Value
+						<% end_if %>
+						</td>
+                    </tr>
+					<% end_loop %>
+                    </tbody>
+				</table>
+                </div>
+			</div>
+		<% else %>
+			$Layout
 		<% end_if %>
 
-		$Layout
+
 	</div>
 
 	<% include Footer %>

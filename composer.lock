@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5a279c2d91314364bf3d671af3c7c53c",
+    "hash": "61e1028869e17bbde281caf95caa1476",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -16,7 +16,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/309d9002a48fa4bb223b91a2fa1715ef290b8656",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e29b1564c572ecf9cc9913ebde66e19827746f90",
                 "reference": "309d9002a48fa4bb223b91a2fa1715ef290b8656",
                 "shasum": ""
             },
@@ -422,16 +422,16 @@
         },
         {
             "name": "silverstripe/crontask",
-            "version": "dev-master",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-crontask.git",
-                "reference": "8655f48989a8cc43f472edbcb96509de90605c87"
+                "reference": "0db152c8edf448e3ed9797d60e181800ac67ed75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-crontask/zipball/8655f48989a8cc43f472edbcb96509de90605c87",
-                "reference": "8655f48989a8cc43f472edbcb96509de90605c87",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-crontask/zipball/0db152c8edf448e3ed9797d60e181800ac67ed75",
+                "reference": "0db152c8edf448e3ed9797d60e181800ac67ed75",
                 "shasum": ""
             },
             "require": {
@@ -466,11 +466,52 @@
                 "cron",
                 "silverstripe"
             ],
-            "time": "2015-07-02 00:17:54"
+            "time": "2014-11-20 01:20:17"
+        },
+        {
+            "name": "silverstripe/dynamodb",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-dynamodb.git",
+                "reference": "bb49230b9f79888ae6222a0f5314f127f05f6a41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-dynamodb/zipball/bb49230b9f79888ae6222a0f5314f127f05f6a41",
+                "reference": "bb49230b9f79888ae6222a0f5314f127f05f6a41",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": "2.*",
+                "doctrine/cache": "1.*",
+                "silverstripe/crontask": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "silverstripe-dynamodb"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Stig Lindqvist",
+                    "email": "stig@silverstripe.com"
+                }
+            ],
+            "description": "SilverStripe DynamoDB integration.",
+            "keywords": [
+                "aws",
+                "dynamodb",
+                "silverstripe"
+            ],
+            "time": "2015-07-07 22:22:00"
         },
         {
             "name": "silverstripe/environmentcheck",
-            "version": "dev-master",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-environmentcheck.git",

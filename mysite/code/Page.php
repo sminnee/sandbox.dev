@@ -2,12 +2,22 @@
 class Page extends SiteTree {
 
 	public function EnvDetails() {
+
+		$phpExtensionList = new ArrayList();
+		$extensions = get_loaded_extensions();
+		natcasesort($extensions);
+		foreach($extensions as $extension) {
+			$phpExtensionList->push(new ArrayData([
+				"Value" => $extension
+			]));
+		}
+
 		$list = new ArrayList();
 		foreach(array(
 			'Hostname' => $_SERVER['HTTP_HOST'],
 			'PHP' => phpversion(),
-			'PHP extensions' => implode(', ', get_loaded_extensions()),
-			'OS' => php_uname()
+			'OS' => php_uname(),
+			'PHP extensions' => $phpExtensionList,
 		) as $k => $v) {
 			$list->push(new ArrayData(array(
 				'Name' => $k,
@@ -16,7 +26,6 @@ class Page extends SiteTree {
 		}
 		return $list;
 	}
-
 }
 
 class Page_Controller extends ContentController {
