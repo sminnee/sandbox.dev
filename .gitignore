@@ -6,3 +6,6 @@ crontask/
 environmentcheck/
 vendor/
 assets/
+silverstripe-cache/
+silverstripe-dynamodb
+
