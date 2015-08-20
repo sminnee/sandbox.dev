@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "309d9002a48fa4bb223b91a2fa1715ef290b8656"
+                "reference": "f8c68d5de3e204320a2a47d0d786a8ee17b1a8ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e29b1564c572ecf9cc9913ebde66e19827746f90",
-                "reference": "309d9002a48fa4bb223b91a2fa1715ef290b8656",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f8c68d5de3e204320a2a47d0d786a8ee17b1a8ee",
+                "reference": "f8c68d5de3e204320a2a47d0d786a8ee17b1a8ee",
                 "shasum": ""
             },
             "require": {
@@ -67,7 +67,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-07-14 22:45:00"
+            "time": "2015-08-12 20:41:18"
         },
         {
             "name": "composer/installers",
@@ -591,44 +591,6 @@
                 "silverstripe"
             ],
             "time": "2015-05-28 06:59:11"
-        },
-        {
-            "name": "silverstripe/silverstripe-aws",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://gitlab.silverstripe.com/aws/silverstripe-aws.git",
-                "reference": "99b873d0c572f93c52718790fbeeff5b7e2738d3"
-            },
-            "require": {
-                "aws/aws-sdk-php": "2.*",
-                "doctrine/cache": "1.*",
-                "silverstripe/crontask": "*",
-                "silverstripe/environmentcheck": "*"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "installer-name": "aws"
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Stig Lindqvist",
-                    "email": "stig@silverstripe.com"
-                }
-            ],
-            "description": "This module contains supporting code for running a SilverStripe on AWS",
-            "homepage": "https://gitlab.silverstripe.com/aws/silverstripe-aws",
-            "keywords": [
-                "aws",
-                "silverstripe"
-            ],
-            "support": {
-                "issues": "https://gitlab.silverstripe.com/aws/silverstripe-aws/issues"
-            },
-            "time": "2015-04-08 23:46:02"
         },
         {
             "name": "symfony/event-dispatcher",
