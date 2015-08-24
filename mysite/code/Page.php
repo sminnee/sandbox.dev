@@ -18,6 +18,9 @@ class Page extends SiteTree {
 			if(!$version && $extension == 'curl') {
 				$version = curl_version()['version'];
 			}
+			if(!$version && $extension == 'openssl') {
+				$version = OPENSSL_VERSION_TEXT;
+			}
 
 			$phpExtensionList->push(new ArrayData([
 				'Value' => sprintf('%s - %s', $extension, $version)
