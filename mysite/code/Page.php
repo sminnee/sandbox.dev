@@ -15,6 +15,7 @@ class Page extends SiteTree {
 		$list = new ArrayList();
 		foreach(array(
 			'Hostname' => $_SERVER['HTTP_HOST'],
+			'Web server' => $_SERVER['SERVER_SOFTWARE'],
 			'PHP' => phpversion(),
 			'OS' => php_uname(),
 			'PHP extensions' => $phpExtensionList,
