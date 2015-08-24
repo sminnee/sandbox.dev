@@ -7,8 +7,20 @@ class Page extends SiteTree {
 		$extensions = get_loaded_extensions();
 		natcasesort($extensions);
 		foreach($extensions as $extension) {
+			$version = phpversion($extension);
+			if(!$version && $extension == 'gd') {
+				$info = function_exists('gd_info') ? gd_info() : array();
+				$version = isset($info['GD Version']) ? $info['GD Version'] : '';
+			}
+			if(!$version && $extension == 'pcre') {
+				$version = PCRE_VERSION;
+			}
+			if(!$version && $extension == 'curl') {
+				$version = curl_version()['version'];
+			}
+
 			$phpExtensionList->push(new ArrayData([
-				"Value" => $extension
+				'Value' => sprintf('%s - %s', $extension, $version)
 			]));
 		}
 
