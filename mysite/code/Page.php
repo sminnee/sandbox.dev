@@ -21,7 +21,14 @@ class Page extends SiteTree {
 			if(!$version && $extension == 'openssl') {
 				$version = OPENSSL_VERSION_TEXT;
 			}
+			if(!$version && $extension == 'libxml') {
+				$version = LIBXML_DOTTED_VERSION;
+			}
 
+			// Extension version shows as 0.7-dev, which isn't useful. Use SQLite3::version() instead.
+			if($extension == 'sqlite3') {
+				$version = SQLite3::version()['versionString'];
+			}
 			$phpExtensionList->push(new ArrayData([
 				'Value' => sprintf('%s - %s', $extension, $version)
 			]));
