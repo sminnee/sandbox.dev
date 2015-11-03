@@ -1,6 +1,20 @@
 <?php
 class Page extends SiteTree {
 
+	/**
+	 * Sometimes dev/build gets borked just because Page doesn't have a value
+	 * and get's turned into an obsolete _table. Then Error page or something
+	 * tries to do a count and fails because there is no Page_version table.
+	 *
+	 * Oh joy of joys. Therefore the $db below that has no other use than
+	 * to prevent dev/build failures...
+	 *
+	 * @var array
+	 */
+	private static $db = [
+		'IsAPage' => 'Boolean'
+	];
+
 	public function EnvDetails() {
 
 		$phpExtensionList = new ArrayList();
