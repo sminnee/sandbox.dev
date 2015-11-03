@@ -47,9 +47,16 @@ class Page extends SiteTree {
 			]));
 		}
 
+		$platform = new ArrayList();
+		foreach($this->getPlatformYaml() as $key => $value) {
+			$platform->push(new ArrayData([
+				'Value' => sprintf("%s: %s", $key, $value)
+			]));
+		}
 		$list = new ArrayList();
 		foreach(array(
 			'Hostname' => $_SERVER['HTTP_HOST'],
+			'Platform' => $platform,
 			'Web server' => $_SERVER['SERVER_SOFTWARE'],
 			'PHP' => phpversion(),
 			'OS' => php_uname(),
@@ -61,6 +68,18 @@ class Page extends SiteTree {
 			)));
 		}
 		return $list;
+	}
+
+	protected function getPlatformYaml() {
+
+		require_once(BASE_PATH.'/'.FRAMEWORK_DIR.'/thirdparty/spyc/spyc.php');
+
+		$filePath = BASE_PATH.'/.platform.yml';
+		if(is_readable($filePath)) {
+			return Spyc::YAMLLoad($filePath);
+		}
+
+		return [];
 	}
 }
 
