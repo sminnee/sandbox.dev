@@ -56,6 +56,7 @@ class Page extends SiteTree {
 		$list = new ArrayList();
 		foreach(array(
 			'Hostname' => $_SERVER['HTTP_HOST'],
+			'Document root' => $_SERVER['DOCUMENT_ROOT'],
 			'Platform' => $platform,
 			'Web server' => $_SERVER['SERVER_SOFTWARE'],
 			'PHP' => phpversion(),
