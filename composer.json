@@ -7,7 +7,10 @@
     "silverstripe/framework": "3.1.13",
     "silverstripe/crontask": "1.1.0",
     "silverstripe/environmentcheck": "1.1.1",
-    "silverstripe/dynamodb": "1.0.1"
+    "silverstripe/dynamodb": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "3.7.*@stable"
   },
   "config": {
     "process-timeout": 600
