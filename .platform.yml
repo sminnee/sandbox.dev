@@ -1,2 +1,5 @@
 infrastructure: 3.2.1
 base: "debian-jessie"
+shared_dirs:
+  mysite:
+    testfolder: {}
