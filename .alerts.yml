@@ -1,12 +1,11 @@
 alerts:
   dev-check:
     envcheck-suite: "pingdom"
-    environment: "live-oscar"
+    environment: "Production"
     contacts:
       - "stig@silverstripe.com"
       - "sean@silverstripe.com"
   support:
     envcheck-suite: "support"
-    environment: "live-oscar"
+    environment: "UAT"
     contacts:
-      - "ops"
