@@ -1,4 +1,4 @@
-infrastructure: 3.6.3
+infrastructure: 3.6.4
 shared_dirs:
   mysite:
     testfolder: {}
