@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7df547a2bbf29dc2d24c39ef3d34f584",
-    "content-hash": "b91494ee33c5ab03512555e04d8482a7",
+    "hash": "eb1e3ab4db373aa71d581720e1002160",
+    "content-hash": "954ae6b301007db853a6f549bbb4a219",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.19.12",
+            "version": "3.18.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5d5697c7bc9ab22ce718afb51e5496d0c5cb8778"
+                "reference": "85f1fddaeb40b95106b2a2764268e9c89fc258ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5d5697c7bc9ab22ce718afb51e5496d0c5cb8778",
-                "reference": "5d5697c7bc9ab22ce718afb51e5496d0c5cb8778",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/85f1fddaeb40b95106b2a2764268e9c89fc258ce",
+                "reference": "85f1fddaeb40b95106b2a2764268e9c89fc258ce",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2016-09-29 21:07:49"
+            "time": "2016-08-11 16:40:35"
         },
         {
             "name": "composer/installers",
@@ -93,12 +93,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
+                "reference": "11558614ec61c60f198591ca749ec4187c6db25f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
-                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
+                "url": "https://api.github.com/repos/composer/installers/zipball/11558614ec61c60f198591ca749ec4187c6db25f",
+                "reference": "11558614ec61c60f198591ca749ec4187c6db25f",
                 "shasum": ""
             },
             "require": {
@@ -142,6 +142,7 @@
                 "Dolibarr",
                 "Hurad",
                 "ImageCMS",
+                "Kanboard",
                 "MODX Evo",
                 "Mautic",
                 "OXID",
@@ -192,7 +193,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13 20:53:52"
+            "time": "2016-11-12 17:10:24"
         },
         {
             "name": "doctrine/cache",
@@ -200,22 +201,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "fe68e4f78804684e31cce17590b0bd9f088db1b0"
+                "reference": "0e7ac7811c67d1c4fe93e0fe44d11c90e09d6b20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/fe68e4f78804684e31cce17590b0bd9f088db1b0",
-                "reference": "fe68e4f78804684e31cce17590b0bd9f088db1b0",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/0e7ac7811c67d1c4fe93e0fe44d11c90e09d6b20",
+                "reference": "0e7ac7811c67d1c4fe93e0fe44d11c90e09d6b20",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.5|~7.0"
+                "php": "~5.6|~7.0"
             },
             "conflict": {
                 "doctrine/common": ">2.2,<2.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8|~5.0",
+                "phpunit/phpunit": "^5.6.2",
                 "predis/predis": "~1.0"
             },
             "type": "library",
@@ -261,7 +262,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2016-07-15 15:57:08"
+            "time": "2016-10-29 11:43:38"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -269,12 +270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "a0d75173c8553b4281c8319333d9ee90e4656ed1"
+                "reference": "471026d23a14f6eadd0147eb5697f48ebe6adec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a0d75173c8553b4281c8319333d9ee90e4656ed1",
-                "reference": "a0d75173c8553b4281c8319333d9ee90e4656ed1",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/471026d23a14f6eadd0147eb5697f48ebe6adec8",
+                "reference": "471026d23a14f6eadd0147eb5697f48ebe6adec8",
                 "shasum": ""
             },
             "require": {
@@ -323,7 +324,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-09-22 14:23:55"
+            "time": "2016-11-15 18:22:40"
         },
         {
             "name": "guzzlehttp/promises",
@@ -632,16 +633,16 @@
         },
         {
             "name": "silverstripe/crontask",
-            "version": "1.x-dev",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-crontask.git",
-                "reference": "57675d24ad71542f0efc250fecf61b0b2dbd7797"
+                "url": "https://github.com/silverstripe-labs/silverstripe-crontask.git",
+                "reference": "424731b920c77271e018c741d971334c2ba035c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-crontask/zipball/57675d24ad71542f0efc250fecf61b0b2dbd7797",
-                "reference": "57675d24ad71542f0efc250fecf61b0b2dbd7797",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-crontask/zipball/424731b920c77271e018c741d971334c2ba035c8",
+                "reference": "424731b920c77271e018c741d971334c2ba035c8",
                 "shasum": ""
             },
             "require": {
@@ -652,11 +653,6 @@
                 "phpunit/phpunit": "~3.7@stable"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "1": "1.2.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -676,24 +672,24 @@
                 "cron",
                 "silverstripe"
             ],
-            "time": "2016-09-30 12:45:03"
+            "time": "2016-04-04 00:48:30"
         },
         {
             "name": "silverstripe/dynamodb",
-            "version": "dev-master",
+            "version": "dev-gc_minute",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-dynamodb.git",
-                "reference": "c2f866202be2242e40b748059a019f8d8e35185d"
+                "reference": "b9b24a1b1882071bbefe14b1e7bb9ab352cfddc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-dynamodb/zipball/c2f866202be2242e40b748059a019f8d8e35185d",
-                "reference": "c2f866202be2242e40b748059a019f8d8e35185d",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-dynamodb/zipball/b9b24a1b1882071bbefe14b1e7bb9ab352cfddc6",
+                "reference": "b9b24a1b1882071bbefe14b1e7bb9ab352cfddc6",
                 "shasum": ""
             },
             "require": {
-                "aws/aws-sdk-php": "~3.18",
+                "aws/aws-sdk-php": "~3.18.6",
                 "doctrine/cache": "1.*",
                 "silverstripe/crontask": "*"
             },
@@ -724,7 +720,7 @@
                 "dynamodb",
                 "silverstripe"
             ],
-            "time": "2016-05-18 23:14:38"
+            "time": "2016-11-15 20:19:59"
         },
         {
             "name": "silverstripe/environmentcheck",
@@ -732,12 +728,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-environmentcheck.git",
-                "reference": "582c4173e18a428f1b2672b53a26156047e67b81"
+                "reference": "ad54d788d4f5e4a90044e1f6be7d7b1b26343e02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-environmentcheck/zipball/582c4173e18a428f1b2672b53a26156047e67b81",
-                "reference": "582c4173e18a428f1b2672b53a26156047e67b81",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-environmentcheck/zipball/ad54d788d4f5e4a90044e1f6be7d7b1b26343e02",
+                "reference": "ad54d788d4f5e4a90044e1f6be7d7b1b26343e02",
                 "shasum": ""
             },
             "require": {
@@ -773,7 +769,7 @@
                 "silverstripe",
                 "testing"
             ],
-            "time": "2016-08-31 00:31:14"
+            "time": "2016-11-07 18:02:13"
         },
         {
             "name": "silverstripe/framework",
@@ -1205,12 +1201,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "e7540734bad981fe59f8ef14b6fc194ae9df8d9c"
+                "reference": "befb26a3713c97af90d25dd12e75621ef14d91ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/e7540734bad981fe59f8ef14b6fc194ae9df8d9c",
-                "reference": "e7540734bad981fe59f8ef14b6fc194ae9df8d9c",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/befb26a3713c97af90d25dd12e75621ef14d91ff",
+                "reference": "befb26a3713c97af90d25dd12e75621ef14d91ff",
                 "shasum": ""
             },
             "require": {
@@ -1246,7 +1242,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-02 01:57:56"
+            "time": "2016-11-14 16:15:57"
         }
     ],
     "aliases": [],
@@ -1254,6 +1250,7 @@
     "stability-flags": {
         "silverstripe/cms": 0,
         "silverstripe/framework": 0,
+        "silverstripe/dynamodb": 20,
         "phpunit/phpunit": 0
     },
     "prefer-stable": false,
