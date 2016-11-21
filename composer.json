@@ -7,7 +7,7 @@
     "silverstripe/framework": "3.1.*@stable",
     "silverstripe/crontask": "*",
     "silverstripe/environmentcheck": "*",
-    "silverstripe/dynamodb": "dev-gc_minute"
+    "silverstripe/dynamodb": "2.0.1"
   },
   "require-dev": {
     "phpunit/phpunit": "3.7.*@stable"
