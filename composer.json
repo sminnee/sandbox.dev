@@ -2,15 +2,15 @@
   "name": "stojg/sandbox.dev",
   "description": "This is stigs SilverStripe sandbox",
   "require": {
-    "php": ">=5.5",
-    "silverstripe/cms": "3.1.*@stable",
-    "silverstripe/framework": "3.1.*@stable",
+    "php": ">=5.6",
+    "silverstripe/cms": "~3.5.0@stable",
+    "silverstripe/framework": "~3.5.0@stable",
     "silverstripe/crontask": "*",
     "silverstripe/environmentcheck": "*",
-    "silverstripe/dynamodb": "2.0.1"
+    "silverstripe/dynamodb": "*"
   },
   "require-dev": {
-    "phpunit/phpunit": "3.7.*@stable"
+    "phpunit/PHPUnit": "~4.8@stable"
   },
   "config": {
     "process-timeout": 600
