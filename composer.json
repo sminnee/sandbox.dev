@@ -3,8 +3,8 @@
   "description": "This is stigs SilverStripe sandbox",
   "require": {
     "php": ">=5.6",
-    "silverstripe/cms": "~3.5.0@stable",
-    "silverstripe/framework": "~3.5.0@stable",
+    "silverstripe/cms": "~3.5.0",
+    "silverstripe/framework": "~3.5.0",
     "silverstripe/crontask": "*",
     "silverstripe/environmentcheck": "*",
     "silverstripe/dynamodb": "*"
@@ -15,5 +15,6 @@
   "config": {
     "process-timeout": 600
   },
+  "prefer-stable": true,
   "minimum-stability": "dev"
 }
