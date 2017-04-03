@@ -1,3 +1,3 @@
 # Sandbox
 
-Generic SS test repository
+Generic SilverStripe test code
