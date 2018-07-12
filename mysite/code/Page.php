@@ -1,4 +1,6 @@
 <?php
+use Symfony\Component\Yaml\Parser;
+
 class Page extends SiteTree {
 
 	/**
@@ -16,7 +18,6 @@ class Page extends SiteTree {
 	];
 
 	public function EnvDetails() {
-
 		$phpExtensionList = new ArrayList();
 		$extensions = get_loaded_extensions();
 		natcasesort($extensions);
@@ -71,15 +72,15 @@ class Page extends SiteTree {
 		return $list;
 	}
 
-	protected function getPlatformYaml() {
-
-		require_once(BASE_PATH.'/'.FRAMEWORK_DIR.'/thirdparty/spyc/spyc.php');
-
+	/**
+	 * @return array
+	 */
+	private function getPlatformYaml() {
+		$parser = new Parser();
 		$filePath = BASE_PATH.'/.platform.yml';
-		if(is_readable($filePath)) {
-			return Spyc::YAMLLoad($filePath);
+		if (is_readable($filePath)) {
+			return $parser->parse(file_get_contents($filePath));
 		}
-
 		return [];
 	}
 }
@@ -88,6 +89,7 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
+
 		Requirements::themedCSS('reset');
 		Requirements::themedCSS('layout');
 		Requirements::themedCSS('typography');

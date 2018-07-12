@@ -3,14 +3,14 @@
   "description": "This is stigs SilverStripe sandbox",
   "require": {
     "php": ">=5.6",
-    "silverstripe/cms": "~3.6",
-    "silverstripe/framework": "~3.6",
+    "silverstripe/cms": "^3.0",
+    "silverstripe/framework": "^3.0",
     "silverstripe/crontask": "*",
-    "silverstripe/environmentcheck": "*",
-    "silverstripe/dynamodb": "^3.0"
+    "silverstripe/dynamodb": "^3.0",
+    "symfony/yaml": "^3.0"
   },
   "require-dev": {
-    "phpunit/PHPUnit": "~4.8"
+    "phpunit/phpunit": "^4.8"
   },
   "config": {
     "process-timeout": 600
